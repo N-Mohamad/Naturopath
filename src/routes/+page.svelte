@@ -1,3 +1,7 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
 
 <script>
 	import Footer from "./footer.svelte";
@@ -202,7 +206,7 @@ img {
 }
 hr{
     width: 150px;
-    position: relative; right: 100px;
+    margin-left: 0;
 }
 h1{
     font-family: 'Poppins', sans-serif;
@@ -431,6 +435,21 @@ h3{
 .left-head{
     box-sizing: border-box;
     border: 20px;
+}
+
+@keyframes slidInTop {
+    from{
+        transform: translateY(-300PX);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+.inside-right-div2{
+    animation-name: slidInTop;
+    animation-duration: 1s;
+    animation-direction: alternate;
 }
 
 </style>
